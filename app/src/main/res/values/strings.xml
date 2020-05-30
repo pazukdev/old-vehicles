@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Old Vehicles</string>
+    <string name="connecting">Connecting</string>
+    <string name="waiting">Waiting for server response</string>
 </resources>

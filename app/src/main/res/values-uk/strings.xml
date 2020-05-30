@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Стара техніка</string>
+    <string name="waiting">Очікування відповіді сервера</string>
+    <string name="connecting">З\'єднання</string>
+</resources>

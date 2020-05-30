@@ -1,6 +1,8 @@
 package com.pazukdev.oldvehicles;
 
+import android.graphics.Color;
 import android.os.Bundle;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,8 +23,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         view = findViewById(R.id.webview);
+        view.setBackgroundColor(Color.TRANSPARENT);
         view.getSettings().setJavaScriptEnabled(true);
         view.getSettings().setDomStorageEnabled(true);
+        view.setWebViewClient(new AppWebViewClient());
+        view.getSettings().setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
         if (savedInstanceState == null) {
             view.loadUrl(URL);
         }
