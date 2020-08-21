@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Мотоциклети ИМЗ КМЗ</string>
+    <string name="connecting">Свързване</string>
+    <string name="waiting">Изчаква се отговор от сървъра</string>
+</resources>

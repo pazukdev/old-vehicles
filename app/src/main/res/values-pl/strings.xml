@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Old Vehicles</string>
     <string name="connecting">Połączenie</string>
     <string name="waiting">Oczekiwanie na odpowiedź serwera</string>
+    <string name="app_name">Motocykle KMZ IMZ</string>
 </resources>

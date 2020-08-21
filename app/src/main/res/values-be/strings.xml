@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Матацыклы КМЗ ІМЗ</string>
+    <string name="waiting">Чаканне адказу сервера</string>
+    <string name="connecting">Злучэнне</string>
+</resources>
