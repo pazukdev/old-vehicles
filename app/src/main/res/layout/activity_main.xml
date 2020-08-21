@@ -33,8 +33,9 @@
             android:layout_alignParentBottom="true"
             app:adSize="BANNER"
             app:adUnitId="ca-app-pub-3940256099942544/6300978111"
-            app:layout_constraintTop_toTopOf="@+id/swiperefreshlayout"
-            app:layout_constraintStart_toStartOf="@+id/swiperefreshlayout">
+            app:layout_constraintBottom_toBottomOf="@+id/swiperefreshlayout"
+            app:layout_constraintStart_toStartOf="@+id/swiperefreshlayout"
+            app:layout_constraintEnd_toEndOf="parent">
     </com.google.android.gms.ads.AdView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
