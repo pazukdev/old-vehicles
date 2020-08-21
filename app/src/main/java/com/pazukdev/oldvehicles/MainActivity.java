@@ -30,12 +30,11 @@ public class MainActivity extends AppCompatActivity {
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
+                final AdView adView = findViewById(R.id.adView);
+                final AdRequest adRequest = new AdRequest.Builder().build();
+                adView.loadAd(adRequest);
             }
         });
-
-        final AdView adView = findViewById(R.id.adView);
-        final AdRequest adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
 
         view = findViewById(R.id.webview);
         view.setBackgroundColor(Color.TRANSPARENT);
