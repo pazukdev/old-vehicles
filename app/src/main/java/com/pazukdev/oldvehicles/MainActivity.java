@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
     public static final String URL = "https://www.old-vehicles.com";
 
     private WebView view;
-    private AdView mAdView;
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -34,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+        final AdView adView = findViewById(R.id.adView);
+        final AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
         view = findViewById(R.id.webview);
         view.setBackgroundColor(Color.TRANSPARENT);
