@@ -6,7 +6,6 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
@@ -46,16 +45,6 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             view.loadUrl(URL);
         }
-        final SwipeRefreshLayout swipeRefreshLayout = findViewById(R.id.swiperefreshlayout);
-        swipeRefreshLayout.setOnRefreshListener(
-                new SwipeRefreshLayout.OnRefreshListener() {
-                    @Override
-                    public void onRefresh() {
-                        view.reload();
-                        swipeRefreshLayout.setRefreshing(false);
-                    }
-                }
-        );
     }
 
     @Override
