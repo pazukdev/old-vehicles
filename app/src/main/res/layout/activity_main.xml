@@ -8,24 +8,29 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <WebView
-            android:id="@+id/webview"
+    <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:id="@+id/container">
 
-<!--    sample: ca-app-pub-3940256099942544/6300978111-->
-<!--    my: ca-app-pub-3405326739489796/9277723716-->
-    <com.google.android.gms.ads.AdView
-            android:id="@+id/adView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            app:adSize="BANNER"
-            app:adUnitId="ca-app-pub-3405326739489796/9277723716"
-            app:layout_constraintBottom_toBottomOf="@+id/webview"
-            app:layout_constraintStart_toStartOf="@+id/webview"
-            app:layout_constraintEnd_toEndOf="parent">
-    </com.google.android.gms.ads.AdView>
+        <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/adView"/>
+
+        <!--    sample: ca-app-pub-3940256099942544/6300978111-->
+        <!--    my: ca-app-pub-3405326739489796/9277723716-->
+        <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                app:adSize="BANNER"
+                app:adUnitId="ca-app-pub-3405326739489796/9277723716"/>
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

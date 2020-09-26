@@ -6,10 +6,10 @@ android {
 
     defaultConfig {
         applicationId "com.pazukdev.oldvehicles"
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion 29
-        versionCode 5
-        versionName "2.03"
+        versionCode 6
+        versionName "2.04"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
